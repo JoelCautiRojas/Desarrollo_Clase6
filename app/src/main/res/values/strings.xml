@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ejemplo_App_Permisos</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
