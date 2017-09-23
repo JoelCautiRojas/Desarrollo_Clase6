@@ -74,6 +74,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             @Override
             public void onClick(View v) {
                 Intent intentomapa = new Intent(MainActivity.this, MapsActivity.class);
+                if(miubicacion != null)
+                {
+                    intentomapa.putExtra("latitud",miubicacion.getLatitude());
+                    intentomapa.putExtra("longitud",miubicacion.getLongitude());
+                }
                 startActivity(intentomapa);
             }
         });
